@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/summary_Cell" >
+    <LinearLayout
+        android:id="@+id/linearquestion"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="20dp"
+	    android:weightSum="2"
+	     >
+
+	    <ImageView
+	        android:id="@+id/iv_sign"
+	        android:layout_width="@dimen/summarysign_width"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_weight="0.1"
+	        android:background="@drawable/summarycorrectanswer" />
+
+	    <TextView
+	        android:id="@+id/tv_summaryquestion"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_weight="1.82"
+	        android:paddingLeft="20dp"
+	        android:text="@string/summary"
+	        android:textColor="#000000"
+	        android:textSize="25sp" />
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:weightSum="2"
+	    >
+
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_weight="1.8"/>
+
+	    <TextView
+	        android:id="@+id/tv_summaryuserquestion"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_weight="0.2"
+	        android:paddingLeft="20dp"
+	        android:text="@string/summary_answer"
+	        android:textSize="25sp" />
+	    
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:weightSum="2"
+	    >
+
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_weight="1.8"/>
+
+	    <TextView
+	        android:id="@+id/tv_summarycorrectquestion"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingLeft="20dp"
+	        android:text="Correct : "
+	        android:layout_weight="0.2"
+	        android:textColor="#000000"
+	        android:textSize="25sp" />
+	    
+	</LinearLayout>
+	
+	
+	
+</LinearLayout>

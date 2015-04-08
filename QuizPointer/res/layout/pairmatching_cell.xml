@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pairmatchingCell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    	<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_weight="0.01"
+			android:layout_gravity="center_vertical"
+			android:background="@android:color/darker_gray"/>
+
+         <TextView
+              android:id="@+id/pairmatching_answer"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/sorted_height"
+              android:background="@drawable/quizchoicea"
+              android:gravity="left|center"
+              android:lines="2"
+              android:paddingLeft="@dimen/padding_choiceanswer"
+              android:paddingRight="40dp"
+              android:text="Lorem Ipsum"
+              android:textColor="#9EA7B2"
+              android:textSize="24sp" />
+          <View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_weight="0.01"
+			android:layout_gravity="center_vertical"
+			android:background="@android:color/darker_gray"/>
+    
+</LinearLayout>

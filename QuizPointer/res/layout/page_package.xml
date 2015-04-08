@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE2E5"
+    android:weightSum="16"
+    android:id="@+id/pagePackage"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/title"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1.5"
+    	android:text="@string/title"
+    	android:textColor="#ffffff"
+    	android:background="#000000"
+    	android:textSize="@dimen/title_size"
+    	android:textStyle="bold"
+    	android:gravity="center"/>
+    
+    <TableRow 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#3498DB">
+        <TextView 
+            android:id="@+id/tv_userlogin"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="right"
+        	android:layout_gravity="center"
+        	android:textColor="#ffffff"
+        	android:textSize="@dimen/selectanswer_text"
+        	android:paddingRight="20dp"
+        	android:text="Login as sharon"
+            />
+        
+        
+         </TableRow>
+    
+    <View
+		android:layout_width="match_parent"
+		android:layout_height="4dp"
+		android:layout_weight="0.01"
+		android:layout_gravity="center_vertical"
+		android:background="#2980B9"/>
+    
+    <GridView
+        android:id="@+id/gl_package"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="11.2"
+        android:numColumns="2"
+        android:orientation="horizontal"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="20dp"
+        />
+
+    
+    <TableRow
+        android:id="@+id/tr_buttonlogout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.29"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:background="#ffffff">
+        <Button
+            android:id="@+id/buttonlogout"
+        	android:layout_width="200dp"
+       	 	android:layout_height="wrap_content"
+        	android:layout_gravity="center|bottom"
+        	android:background="@drawable/blogout"/>
+      </TableRow>
+      
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="16"
+    android:background="#ffffff"
+    android:id="@+id/pageListUser">
+    
+    <TextView 
+        android:id="@+id/title"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1.5"
+    	android:text="@string/title"
+    	android:textColor="#ffffff"
+    	android:background="#000000"
+    	android:textSize="@dimen/title_size"
+    	android:textStyle="bold"
+    	android:gravity="center"/>
+    
+    <TextView 
+        android:id="@+id/welcome_text"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:text="@string/welcome_text"
+    	android:textColor="#ffffff"
+    	android:textSize="@dimen/welcometext_size"
+    	android:gravity="center"
+    	android:layout_weight="1"
+        android:background="#3498DB"/>
+    
+    <View
+		android:layout_width="match_parent"
+		android:layout_height="4dp"
+		android:layout_weight="0.01"
+		android:layout_gravity="center_vertical"
+		android:background="#2980B9"/>
+    
+    
+     <TextView 
+        android:id="@+id/listuser_text"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_marginTop="@dimen/margin_listuser"
+    	android:layout_marginBottom="@dimen/margin_listuser"
+    	android:text="List of User"
+    	android:textColor="#000000"
+    	android:textSize="@dimen/listuser_size"
+    	android:gravity="center"
+    	android:layout_weight="1"
+    	android:textStyle="bold"
+        />
+    
+     <ListView
+     	android:id="@+id/lv_listuser"
+     	android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10.2"
+		android:textColor="#000000"
+		android:divider="@android:color/darker_gray"
+		android:footerDividersEnabled="true"
+		android:dividerHeight="1dp"
+        />
+      
+      <TableRow
+        android:id="@+id/tr_buttonback"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.29"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:background="#ffffff">
+        <Button
+            android:id="@+id/buttonlogout"
+        	android:layout_width="200dp"
+       	 	android:layout_height="wrap_content"
+        	android:layout_gravity="center|bottom"
+        	android:background="@drawable/bback"/>
+      </TableRow>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/PageTrueFalse"
+    android:weightSum="2"
+    android:orientation="vertical" >
+     
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:paddingBottom="15dp">
+    	<TextView
+        	android:id="@+id/question_text"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/questiontext"
+        	android:textColor="#273747"
+        	android:padding="15dp"
+        	android:gravity="center"
+        	android:textSize="40sp"/>
+    </ScrollView>
+   
+     <TableLayout
+         android:id="@+id/tr_answer"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:weightSum="4.04" >
+    	
+        <TextView
+        	android:id="@+id/tv_true"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+        	android:layout_weight="0.3"
+            android:background="@drawable/truefalsedefault"
+           	android:text="True"
+           	android:gravity="left|center"
+           	android:paddingLeft="@dimen/padding_choiceanswer"
+            android:textColor="#9EA7B2"
+            android:textSize="24sp" />
+       
+      
+         <View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_weight="0.01"
+			android:layout_gravity="center_vertical"
+			android:background="@android:color/darker_gray"/> 
+		
+        <TextView
+            android:id="@+id/tv_false"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:layout_weight="0.3"
+            android:background="@drawable/truefalsedefault"
+           	android:text="False"
+           	android:gravity="left|center"
+           	android:paddingLeft="@dimen/padding_choiceanswer"
+            android:textColor="#9EA7B2"
+            android:textSize="24sp"/>
+        
+        <View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_weight="0.01"
+			android:layout_gravity="center_vertical"
+			android:background="@android:color/darker_gray"/> 
+      
+    </TableLayout>
+
+</LinearLayout>

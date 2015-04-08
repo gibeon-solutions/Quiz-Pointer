@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="maxcharactermultiple">40</string>
+	 <string name="maxcharactersorted">36</string>
+	 <string name="maxcharacterpair">20</string>
+</resources>

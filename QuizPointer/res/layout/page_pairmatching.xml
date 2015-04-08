@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pagePairMatching"
+    android:weightSum="2"
+    android:orientation="vertical" >
+     
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:padding="15dp">
+    	<TextView
+        	android:id="@+id/pairmatching_questiontext"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/questiontext"
+        	android:textColor="#273747"
+        	android:padding="15dp"
+        	android:gravity="center"
+        	android:textSize="40sp"/>
+    </ScrollView>
+    
+    <LinearLayout
+        android:id="@+id/llpairmathing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+    <gibeon.app.adapter.DragNDropListView
+                android:id="@+id/lv_pairmatchinganswer1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+        		android:layout_weight="0.5"
+        		android:layout_marginRight="5dp"
+                android:divider="@android:color/darker_gray" >
+    </gibeon.app.adapter.DragNDropListView>
+      <gibeon.app.adapter.DragNDropListView2
+                android:id="@+id/lv_pairmatchinganswer2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+        		android:layout_weight="0.5"
+                android:layout_marginLeft="5dp"
+                android:divider="@android:color/darker_gray" >
+    </gibeon.app.adapter.DragNDropListView2>
+    
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/pairmatching_righttext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Right Answer : B-E\n A-F\n C-D"
+            android:textColor="#1ABC9C"
+            android:textSize="@dimen/sorted_right"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+           />
+
+    </LinearLayout>
+     
+</LinearLayout>
+
+<com.nhaarman.supertooltips.ToolTipRelativeLayout
+        android:id="@+id/activity_main_tooltipframelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        
+         />
+</RelativeLayout>
+

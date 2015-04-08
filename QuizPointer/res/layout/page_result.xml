@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pageResult"
+    android:background="#ffffff"
+    android:weightSum="16"
+    android:orientation="vertical" > 
+    
+     <TextView 
+        android:id="@+id/title"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1.5"
+    	android:text="@string/title"
+    	android:textColor="#ffffff"
+    	android:background="#000000"
+    	android:textSize="@dimen/title_size"
+    	android:textStyle="bold"
+    	android:gravity="center"/>
+    
+    <TableRow 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#3498DB"/>
+    
+    <View
+		android:layout_width="match_parent"
+		android:layout_height="4dp"
+		android:layout_weight="0.01"
+		android:layout_gravity="center_vertical"
+		android:background="#2980B9"/>
+    
+    <TextView
+        android:id="@+id/tv_result"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="2"
+    	android:text="@string/result"
+    	android:textColor="#34495E"
+    	android:textSize="@dimen/title_size"
+    	android:paddingBottom="20dp"
+    	android:textStyle="bold"
+    	android:gravity="center|bottom"/>
+   
+    <TableRow
+        android:id="@+id/tr_result"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="5.2"
+    	android:padding="20dp"
+    	android:gravity="center|bottom"
+    	android:weightSum="2"
+    	android:text="@string/result">
+
+        <Button
+        	android:id="@+id/button_right"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_weight="1"
+    		android:layout_marginRight="10dp"
+    		android:background="@drawable/bcorrect"
+    		android:text="@string/correctresult"
+    		android:textStyle="bold"
+    		android:textColor="#ffffff"
+    		android:textSize="48sp"
+            />
+        <Button
+            android:id="@+id/button_wrong"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bwrong"
+    		android:text="@string/wrongresult"
+    		android:textColor="#ffffff"
+    		android:textStyle="bold"
+    		android:textSize="48sp"
+            />
+     </TableRow>
+    
+     <TextView
+        android:id="@+id/tv_grade"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="2"
+    	android:text="@string/grade"
+    	android:textColor="#1ABC9C"
+    	android:textSize="@dimen/grade"
+    	android:textStyle="bold"
+    	android:gravity="center|bottom"/> 
+        
+      <TextView
+        android:id="@+id/tv_totalpoint"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1.5"
+    	android:text="@string/total_point"
+    	android:textColor="#34495E"
+    	android:textSize="30sp"
+    	android:layout_marginTop="20dp"
+    	android:background="#DFE2E5"
+    	android:textStyle="bold"
+    	android:gravity="center"/>
+      <View
+		android:layout_width="match_parent"
+		android:layout_height="4dp"
+		android:layout_weight="0.01"
+		android:layout_gravity="center_vertical"
+		android:background="#BEC5CB"/>
+       
+      <TableRow
+        android:id="@+id/tr_buttonlogout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:background="#ffffff">
+        <Button
+            android:id="@+id/buttonmainpage"
+        	android:layout_width="250dp"
+       	 	android:layout_height="wrap_content"
+        	android:layout_gravity="center|bottom"
+        	android:background="@drawable/bmainpage"/>
+      </TableRow>
+
+</LinearLayout>

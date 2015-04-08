@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTop">45dp</dimen>
+     <dimen name="sizePoint">14dp</dimen>
+    <dimen name="sizeQuestion">24dp</dimen>
+    <dimen name="distanceAnswer">8dp</dimen>
+    <dimen name="fontAnswer">15sp</dimen>
+    <dimen name="distancequestion_answer">230dp</dimen>
+    
+</resources>

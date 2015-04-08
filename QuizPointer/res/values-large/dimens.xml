@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">35sp</dimen>
+    <dimen name="package_height">208dp</dimen>
+    <dimen name="package_width">283dp</dimen>
+    <dimen name="padding_choiceanswer">120dp</dimen>
+    <dimen name="close_buttonheight">10dp</dimen>
+    <dimen name="close_buttonwidth">50dp</dimen>
+    <dimen name="popup_selectanswer">18sp</dimen>
+    <dimen name="package_text">28sp</dimen>
+    <dimen name="selectanswer_text">22sp</dimen>
+    <dimen name="header_text">22sp</dimen>
+    <dimen name="grade">45sp</dimen>
+    <dimen name="button_main">50dp</dimen>
+    <dimen name="blogin_height">60dp</dimen>
+    <dimen name="package_marginbottom">8dp</dimen>
+    <dimen name="welcometext_size">28sp</dimen>
+    <dimen name="listuser_size">38sp</dimen>
+    <dimen name="margin_listuser">20dp</dimen>
+    <dimen name="userlist_text">35sp</dimen>
+    <dimen name="user_logo">60dp</dimen>
+    <dimen name="userresult_text">25sp</dimen>
+    <dimen name="checkbox_height">30dp</dimen>
+    <dimen name="sorted_right">30sp</dimen>
+    <dimen name="user_size">55dp</dimen>
+    <dimen name="user_height">55dp</dimen>
+    <dimen name="padding_result">38dp</dimen>
+    <dimen name="bsave_height">80dp</dimen>
+  	<dimen name="bsaveresult_width">220dp</dimen>
+   	<dimen name="sorted_height">80dp</dimen>
+    <dimen name="bsetpackage_height">80dp</dimen>
+    <dimen name="buserresult_height">80dp</dimen>
+    <dimen name="userresult_margin">30dp</dimen>
+    <dimen name="padding_userresult">110dp</dimen>
+     <dimen name="summarybutton_width">200dp</dimen>
+      <dimen name="summarysign_width">20dp</dimen>
+</resources>
