@@ -1,6 +1,6 @@
 package gibeon.app.adapter;
 
-import gibeon.app.entities.User;
+import gibeon.app.entities.User; 
 import gibeon.app.quizpointer.R;
 
 import java.util.ArrayList;
